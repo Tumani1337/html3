@@ -46,3 +46,28 @@ ul.header-menu {
 	padding: 0px 20px;
 
 }
+
+.main-second-sec li {
+	list-style-type: none;
+	margin: 0px 20px;
+	flex-wrap: wrap;
+}
+
+.main-second-sec ul {
+	display: flex;
+	flex-direction: row;
+
+}
+
+
+
+.main-second-sec {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 500px 120px;
+	height: 90px;
+	align-items center:
+	flex-wrap: wrap;
+	
+}
