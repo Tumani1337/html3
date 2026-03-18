@@ -1,3 +1,22 @@
+@font-face {
+    font-family: franklin;
+    src: url(libre_franklin/LibreFranklin-Regular.ttf);
+}
+
+@font-face {
+    font-family: franklin_bold;
+    src: url(libre_franklin/LibreFranklin-Bold.ttf);
+}
+
+@font-face {
+    font-family: tenor;
+    src: url(libre_franklin/TenorSans-Regular.ttf);
+}
+@font-face {
+    font-family: tenor;
+    src: url(libre_franklin/Source-Serif-Pro-Regular.ttf);
+}
+
 ul.header-menu {
 	margin: 0px;
 	padding: 0px;
@@ -30,44 +49,422 @@ ul.header-menu {
 	color: black;
 	text-decoration: none;
 	font-size: 14px;
+
+}
+.type-content {
+	font-family: Libre Franklin;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.author-content {
+	font-family: Libre Franklin;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.description {
+	font-family: Source Serif Pro;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+.type-table {
+	font-family: Libre Franklin;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.title-content a:hover {
+    text-decoration: underline;
+}
+.author-content a:hover {
+	text-decoration: underline;
 }
 
-.main-first-sec {
+.title-content a{
+	color: black;
+	text-decoration: none;
+
+}
+
+.author-content a{
+	color: black;
+	text-decoration: none;
+}
+
+section.solo-card {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 50px 120px;
-	height: 90px;
-	align-items:
-	
+	padding: 20px 120px;
+	max-width: 1600px;
+	align-items:flex-start;
+	gap: 40px;
+	margin: 0 auto ;
+}
+div.card-in-solo{
+	display: block;
+	padding: 0px 15px;
 }
 
-.illustration-badge {
-	padding: 0px 20px;
-
+section.trio-card{
+	display: block;
+	padding: 20px 120px;
+	max-width: 1600px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e6e6e673;
+}
+section.quatro-card{
+	display: block;
+	padding: 20px 120px;
+	max-width: 1600px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e6e6e673;
+}
+section.duo-card {
+	display: block;
+	padding: 20px 120px;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
-.main-second-sec li {
-	list-style-type: none;
-	margin: 0px 20px;
-	flex-wrap: wrap;
+section.quatro-card p.type-table{
+	padding: 0 5px;
 }
-
-.main-second-sec ul {
-	display: flex;
-	flex-direction: row;
-
+section.duo-card p.type-table{
+	padding: 0 3px;
 }
-
-
-
-.main-second-sec {
+div.trio-card{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 500px 120px;
-	height: 90px;
-	align-items center:
-	flex-wrap: wrap;
-	
+	gap: 20px;
+	margin-bottom: 30px;
 }
+div.duo-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+div.quatro-card{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+div.card-in-trio {
+	display: block;
+	margin-bottom: 10px;
+	width: 32%;
+}
+div.card-in-duo {
+	display: block;
+	margin-bottom: 0px;
+	width: 50%;
+	padding: 0;
+	max-width: 600px;
+	box-sizing: border-box;
+}
+div.card-in-quatro{
+	display: block;
+	margin-bottom: 20px;
+	width: 25%;
+	padding: 0px 5px;
+}
+
+div.card-in-trio .img {
+    width: 100%;
+    overflow: hidden;
+}
+div.card-in-quatro .img {
+	width: 100%;
+	overflow: hidden;
+}
+
+div.card-in-trio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+div.card-in-quatro img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+div.card-in-trio .type {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0 5px;
+    text-transform: uppercase;
+}
+
+div.card-in-trio .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+div.button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 0px;
+	width: 100%;
+}
+
+div.card-in-trio .author {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.button-all {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-all:hover {
+    background-color: #333;
+    color: white;
+}
+
+.img {
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+	 transform: scale(1.03);
+}
+
+footer {
+    background-color: #141414;
+    color: #ffffff;
+    padding: 60px 120px 40px 120px;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 40px;
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+    height: 24px;
+    width: auto;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 40px;
+}
+
+div.categories {
+    display: block;
+    gap: 15px;
+    flex: 2;
+}
+
+p.Categories {
+    font-size: 12px;
+    color: #666666;
+    margin: 0 0 10px 0;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    text-transform: uppercase;
+	padding: 10px;
+}
+
+.row-categories {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	width: 1200px;
+}
+
+.categori {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+	padding: 10px;
+	flex: 1;
+	white-space: nowrap;
+}
+
+
+.categori:hover {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.Subscribe\ to\ newsletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Subscribe {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sub-input-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.sub-input-btn input[type="Email address"] {
+    flex: 1;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4a4a4a;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0 0 5px 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.sub-input-btn input::placeholder {
+    color: #4a4a4a;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.sub-input-btn input:focus {
+    border-bottom-color: #ffffff;
+}
+
+.sub-input-btn button {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sub-input-btn button:hover {
+    background-color: #ffffff;
+    color: #141414;
+}
+
+.footer-low {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.type-col {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex: 1;
+}
+
+.type-col p.type-col {
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    text-transform: uppercase;
+	padding: 3px;
+}
+
+
+.name-col {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex: 1;
+	padding: 3px;
+}
+
+/* Ссылки */
+a.name-col {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+    margin: 0;
+}
+
+a.name-col:hover {
+    color: #999999;
+    text-decoration: underline;
+}
+
