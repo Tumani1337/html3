@@ -49,16 +49,27 @@ ul.header-menu {
 	color: black;
 	text-decoration: none;
 	font-size: 14px;
+}
+.title-content {
+    font-family: Tenor Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
 
 }
 .type-content {
 	font-family: Libre Franklin;
 	font-weight: 400;
 	font-style: Regular;
-	font-size: 10px;
+	font-size: 13px;
 	line-height: 12px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+    margin-top: 5px;
+    
 }
 .author-content {
 	font-family: Libre Franklin;
@@ -426,7 +437,6 @@ p.Categories {
     align-items: flex-start;
 }
 
-
 .type-col {
     display: flex;
     flex-direction: row;
@@ -443,8 +453,6 @@ p.Categories {
     text-transform: uppercase;
 	padding: 3px;
 }
-
-
 .name-col {
     display: flex;
     flex-direction: row;
@@ -453,7 +461,6 @@ p.Categories {
 	padding: 3px;
 }
 
-/* Ссылки */
 a.name-col {
     color: #ffffff;
     text-decoration: none;
@@ -467,4 +474,3 @@ a.name-col:hover {
     color: #999999;
     text-decoration: underline;
 }
-
